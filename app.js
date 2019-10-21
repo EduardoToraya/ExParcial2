@@ -20,6 +20,12 @@ else{
 }
 })
 
+app.get("/home", function(req, res){
+  res.send({
+    "Saludo": "Bienvenido al examen parcial 2 de Eduardo Toraya" 
+  })
+})
+
 app.get("/met", function(req, res){
   if(!req.query.search){
     res.send({
